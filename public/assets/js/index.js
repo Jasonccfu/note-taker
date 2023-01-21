@@ -1,21 +1,3 @@
-// import packages
-const express = require("express");
-
-// set server port
-const PORT = process.env.PORT || 3001;
-
-// initialize the app
-const app = express();
-
-// middleware
-app.use(express.urlencoded());
-app.use(express.json());
-app.use(express.static("public"));
-
-app.list(PORT, () => {
-  console.log(`Server live on port ${PORT}`);
-});
-
 let noteTitle;
 let noteText;
 let saveNoteBtn;

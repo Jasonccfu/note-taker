@@ -1,20 +1,29 @@
-// import packages
+// Import packages
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const db = require("./db/db.json");
 
-// set server port
-const PORT = process.env.PORT || 3001;
+// Routes
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
+const { Console } = require("console");
 
-// initialize the app
+// Set server port
+const PORT = process.env.PORT || 3005;
+// Initialize the app
 const app = express();
 
-// middleware
-app.use(express.urlencoded());
+// Middleware
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("./public"));
 
-// listen PORT
+// Routes
+app.use("/api", apiRoutes);
+app.use("/", htmlRoutes);
+
+// Listen for connections
 app.listen(PORT, () => {
-  console.log(`Server live on port ${PORT}! http://localhost:3001`);
+  console.log(`App listening at http://localhost:${PORT} 🚀`);
 });
