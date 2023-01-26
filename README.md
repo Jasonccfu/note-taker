@@ -11,12 +11,11 @@
 
 ## Description
 
-It's a tool for Note taking.
+It's a powerful tool for Note taking. You can type your note on the website, a simple function.
 
 ## Installation
 
-`npm i `
-`npm i `
+`npm install --s`
 
 ## Usage
 
@@ -31,8 +30,6 @@ It's a tool for Note taking.
 Email to me.
 
 ## Tests
-
-
 
 ## Questions
 

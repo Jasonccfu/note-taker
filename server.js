@@ -10,7 +10,7 @@ const htmlRoutes = require("./routes/htmlRoutes");
 const { Console } = require("console");
 
 // Set server port
-const PORT = process.env.PORT || 3005;
+const PORT = process.env.PORT || 3001;
 // Initialize the app
 const app = express();
 
