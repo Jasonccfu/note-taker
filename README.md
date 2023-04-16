@@ -19,7 +19,12 @@ It's a powerful tool for Note taking. You can type your note on the website, a s
 
 ## Usage
 
-[Walkthrough Video](https://watch.screencastify.com/)
+![alt text](/public/assets/img/01.png 'my screens')
+![alt text](/public/assets/img/02.png 'my screens')
+
+[Heroku deployment](https://express-note-taker-deployment.herokuapp.com/)
+
+[Walkthrough Video](https://watch.screencastify.com/v/B6Jvpi6Wn4b3pmgMkvNx/)
 
 ## License
 
